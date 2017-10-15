@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Таблицы и формы</title>
+</head>
+<body>
+	<table border="1" width="100%" cellpadding="5">
+	<caption><strong>Результаты опроса</strong></caption>	
+	<thead>
+        <tr bgcolor=#C0C0C0>
+       	   <th>Номер</th>
+       	   <th>Фамилия</th>
+           <th>Имя</th>
+           <th>Отчество</th>
+           <th>Пол</th>
+           <th>Дата рождения</th>
+           <th>Место рождения</th>
+           <th>Место проживания</th>
+           <th>Телефон</th>
+           <th>Фэйс отстой</th>
+        </tr>
+    </thead>
+    <tfoot>   
+        <tr>
+           <td>я</td>
+           <td>вообще</td>
+           <td>не</td>
+           <td>знаю</td>
+           <td>что</td>
+           <td>здесь</td>
+           <td>можно</td>
+           <td>такого</td>
+           <td>интересного</td>
+          <td>написать</td>
+        </tr>
+    </tfoot>
+    <tbody>   
+        <tr>
+           <td>1</td>
+           <td>Иванов</td>
+           <td>Иван</td>
+           <td>Иванович</td>
+           <td rowspan="3">м</td>
+           <td>1.01.1991</td>
+           <td colspan="2" align=center>Москва</td>
+           <td>8-915-111-11-11</td>
+           <td>не согласен</td>
+        </tr>
+        <tr>
+           <td>2</td>
+           <td>Константинов</td>
+           <td>Ибрагим</td>
+           <td>Русланович</td>
+           <td>12.03.1990</td>
+           <td>Тверь</td>
+           <td>Москва</td>
+           <td>8-800-555-35-35</td>
+           <td>поддерживаю</td>
+        </tr>
+        <tr>
+           <td>3</td>
+           <td>Путин</td>
+           <td>Владимир</td>
+           <td>Владимирович</td>
+           <td>7.10.1952</td>
+           <td>Ленинград</td>
+           <td>Москва</td>
+           <td>секрет</td>
+           <td>кто это?</td>
+        </tr>
+        <tr>
+           <td>4</td>
+           <td>Мемова</td>
+           <td>Екатерина</td>
+           <td>Евгеньевна</td>
+           <td rowspan="2">ж</td>
+           <td>6.07.1994</td>
+           <td colspan="2" align=center>Москва</td>
+           <td>8-910-456-45-55</td>
+           <td>он лучший!!!</td>
+        </tr>
+        <tr>
+           <td>5</td>
+           <td>Витальева</td>
+           <td>Валентина</td>
+           <td>Викторовна</td>
+           <td>4.05.1998</td>
+           <td colspan="2" align=center>Москва</td>
+           <td>8-666-666-66-66</td>
+           <td>ага</td>
+        </tr>
+        <tr>
+           <td>6</td>
+           <td>Дружко</td>
+           <td>Сергей</td>
+           <td>Евгеньевич</td>
+           <td>м</td>
+           <td>3.11.1968</td>
+           <td>Уральск</td>
+           <td>Москва</td>
+           <td>8-888-888-88-88</td>
+           <td>где доказательства?</td>
+        </tr>
+        <tr>
+           <td>7</td>
+           <td>Орлова</td>
+           <td>Мария</td>
+           <td>Сергеевна</td>
+           <td>ж</td>
+           <td>3.07.1992</td>
+           <td>Казань</td>
+           <td>Москва</td>
+           <td>8-123-456-78-90</td>
+           <td>хз мб неточно</td>
+        </tr>
+        <tr>
+           <td>8</td>
+           <td>Петров</td>
+           <td>Ахмед</td>
+           <td>Александрович</td>
+           <td>м</td>
+           <td>5.06.2003</td>
+           <td>Париж</td>
+           <td>Москва</td>
+           <td>8-777-755-75-67</td>
+           <td>эээ</td>
+        </tr>
+    </tbody>   
+</table>
+
+
+<h2>Форма 1</h2>
+<form action="search.php" method="get" name="forma1">
+	<table  border="0" cellspacing="5" cellpadding="5">
+		<caption>Форма регистрации</caption>
+        <tr>
+        	<td align="right" valign="top">Имя</td>
+            <td><input type="text" name="name" size="25"></td>
+        </tr>
+
+        <tr>
+            <td align="right" valign="top">E-mail</td>
+            <td><input type="text" name="e-mail" size="25"></td>
+        </tr>
+
+        <tr>
+            <td align="right" valign="top" >Пароль</td>
+            <td>
+            <input type="password" name="password" size="25">
+            </td>
+        </tr>
+
+        <tr>
+            <td align="right" valign="top">Повтор пароля</td>
+            <td>
+            <input type="password" name="password2" size="25">
+            </td>
+        </tr>
+
+        <tr>
+            <td align="right" valign="top">Пол</td>
+            <td>
+            <input type="radio" name="sex" value="man" checked>
+            мужской
+            <input type="radio" name="sex" value="woman">
+            женский
+            </td>
+        </tr>
+
+        <tr>
+            <td align="right" valign="top">Страна</td>
+            <td><select name="country" size="1">
+           	    <option value="russia">Россия</option>
+                <option value="france" >Франция</option>
+                <option value="germany">Германия</option>
+                <option value="italy">Италия</option>
+                <option value="japan">Япония</option>
+                <option value="canada">Канада</option>
+                <option value="usa">США</option>
+            </select>
+            </td>
+        </tr>
+
+        <tr>
+        	<td align="right" colspan="2">
+            <input type="submit" name="submit" value="Отправить">
+            <input type="reset" name="reset" value="Очистить">
+            </td>
+        </tr>
+    </table>
+</form>
+
+<h2>Форма 2</h2>
+<form action="search.php" name="forma2">
+    <p>
+		<label>
+	       <input type="checkbox" name="forma2" value="agree">Я молодец
+	    </label>
+	</p>
+	<br>
+	<label>Как дела?</label>
+    <label>
+        <input type="radio" name="forma2" value="super">
+        Супер
+    </label>
+    <label>
+        <input type="radio" name="forma2" value="klass">
+        Класс
+    </label>
+    <label>
+        <input type="radio" name="forma2" value="eshkere">
+        Эщкере
+    </label>
+    <br>
+    <p>
+        <input type="file" name="forma2">
+    </p>
+    <p>
+    	<label>Поиск</label>
+        <input type="search" name="forma2">
+    </p>    
+    <p>
+    	<input type="button" name="forma2" value="Кнопочка">
+    </p>	
+    <p>
+    	<label>Просто выбери число от 1 до 10<label>
+    	<input type="number" name="forma2" min="1" max="10" step="1">
+    </p>
+    <p>
+    	<input type="range" name="forma2">
+    </p>
+    <input type="submit" name="forma2">
+    <input type="reset" name="forma2">
+</form>
+</body>
+</html>
