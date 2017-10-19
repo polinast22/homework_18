@@ -1,0 +1,98 @@
+body{
+  background-image: url(images/pik_gora_fantastika_iskusstvo_52141_1920x1080.jpg);
+  background-size: cover;
+}
+.wrapper{
+  margin: auto;
+  margin-top: 150px;
+  max-width: 550px;
+  height: 350px;
+  border-radius: 20px;
+  border-top: 15px solid rgba(132, 176, 186,.70);
+  background-color: rgba(255,255,255,.50);
+}
+.inside{
+  border-top: 15px solid rgba(104, 152, 163,.69);
+}
+.button{
+  height: 50px;
+  background-color: rgba(93, 85, 207,.60);
+  border-radius: 20px;
+  border: 0;
+  box-shadow: 0px 0px 50px 7px;
+}
+.button:hover{
+  transition: 0.5s ease;
+  box-shadow: 0px 0px 35px 5px;
+  border: rgba(232, 163, 107,.49);
+  background-color: rgba(232, 163, 107,.85);
+}
+.button:active{
+  transition: 0.5s ease;
+  box-shadow: 0 1px 2px rgba(0,0,0,.1);
+  border: rgba(91, 87, 217,.49);
+  background-color: rgba(91, 87, 217,.85);
+}
+span{
+  color: black;
+  text-align: center;
+  font-family: georgia, serif;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.form{
+  text-align: center;
+  margin-top: 5%;
+}
+label, input{
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+input{
+  outline:none;
+  transition: 1s;
+  width: 300px;
+  height: 20px;
+  border: 5px solid rgba(13, 10, 99,.20);
+  border-radius: 15px;
+  background: transparent;
+  font-size: 20px;
+  font-family: georgia, serif;
+  text-align: center;
+  color:black;
+}
+input::-webkit-input-placeholder{
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: rgba(23, 20, 66,.66);
+}
+input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: rgba(23, 20, 66,.66);
+}
+
+input[type=email]:hover{
+  width: 350px;
+  border: 5px solid rgba(232, 163, 107,.61);
+}
+input[type=email]:focus{
+  width: 350px;
+  border: 5px solid rgba(232, 163, 107,.61);
+}
+input[type=text]:hover{
+  width: 350px;
+  border: 5px solid rgba(232, 163, 107,.61);
+}
+input[type=text]:focus{
+  width: 350px;
+  border: 5px solid rgba(232, 163, 107,.61);
+}
+input[type=password]:hover{
+  width: 350px;
+  border: 5px solid rgba(232, 163, 107,.61);
+}
+input[type=password]:focus{
+  width: 300px;
+  border: 5px solid rgba(232, 163, 107,.61);
+}
